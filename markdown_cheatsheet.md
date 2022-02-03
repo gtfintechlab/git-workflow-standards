@@ -74,27 +74,27 @@ We already learned about [Headers with different levels](markdown_cheatsheet.md#
 ### Multilevel list (add indentation)
 #### List of QCF electives
 * Targeted Electives
- * Management of Financial Institutions
- * Financial Optimization
- * Financial Data Analysis
+  * Management of Financial Institutions
+  * Financial Optimization
+  * Financial Data Analysis
 * Free Electives
- * MGT 6000: Financial & Managerial Accounting
- * MGT 6066: Corporate Restructuring
- * MGT 6070: International Finance
- * MGT 6086: Entrepreneurial Finance & Private Equity
- * MGT 8803: FinTech Ventures
- * ISYE 6414: Regression Analysis
- * ISYE 6404: Nonparametric Data Analysis
- * ISYE 6644: Simulation
- * ISYE 6650: Probabilistic Models
- * ISYE/CSE 6740: Computational Data Analysis
- * ISYE 7405: Multivariate Data Analysis
- * CS 7646: Machine Learning for Trading
- * CS 7641: Machine Learning
- * CSE: 6140: Comp Sci & Engr Algorithms
- * CSE 6230: High Perf Parallel Comp
- * CSE 6242: Data & Visual Analytics
- * CSE 6643: Numerical Linear Algebra
+  * MGT 6000: Financial & Managerial Accounting
+  * MGT 6066: Corporate Restructuring
+  * MGT 6070: International Finance
+  * MGT 6086: Entrepreneurial Finance & Private Equity
+  * MGT 8803: FinTech Ventures
+  * ISYE 6414: Regression Analysis
+  * ISYE 6404: Nonparametric Data Analysis
+  * ISYE 6644: Simulation
+  * ISYE 6650: Probabilistic Models
+  * ISYE/CSE 6740: Computational Data Analysis
+  * ISYE 7405: Multivariate Data Analysis
+  * CS 7646: Machine Learning for Trading
+  * CS 7641: Machine Learning
+  * CSE: 6140: Comp Sci & Engr Algorithms
+  * CSE 6230: High Perf Parallel Comp
+  * CSE 6242: Data & Visual Analytics
+  * CSE 6643: Numerical Linear Algebra
 
 
 ## 7. Paragraphs

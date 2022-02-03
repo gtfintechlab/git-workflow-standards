@@ -1,6 +1,13 @@
-# Contributing
+# Git Workflow
+
 
 ### Installation
+[Installation page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Creating a new repo
+
+## Contributing
+
 
 ### Setup
 If this is your first time contributing to the project, clone repository to your local device:
