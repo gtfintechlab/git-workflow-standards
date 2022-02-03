@@ -1,28 +1,40 @@
 # Git Workflow
+**add information here**
 
-
-### Installation
+## Installation
 [Installation page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+**add information here**
 
-### Creating a new repo
+## Creating a new repo
+
+### Create repo on GitHub
+**add information here**
+
+### Set conda environment
+Project leader should create `environment.yml` file and push it to remote repo. 
+
+### Set following branch protection rules for `main` branch 
+- Require a pull request before merging
+- Require approvals
+  - At least 1 approval for team size less than or equal to 5
+  - At least 2 approval for team size less greater than 5
 
 ## Contributing
-
 
 ### Setup
 If this is your first time contributing to the project, clone repository to your local device:
 
 Clone the repo. 
 ```
-git clone https://github.com/gtfintechlab/onboarding-docs
-cd onboarding-docs
+git clone https://github.com/gtfintechlab/repo-name
+cd repo-name
 ```
 
 Now your local repo will have one remote corresponding to cloned repo in your github account.
 ```
 git remote -v
-origin	https://github.com/gtfintechlab/onboarding-docs (fetch)
-origin	https://github.com/gtfintechlab/onboarding-docs (push)
+origin	https://github.com/gtfintechlab/repo-name (fetch)
+origin	https://github.com/gtfintechlab/repo-name (push)
 ```
 
 ### Conda environment
@@ -37,16 +49,18 @@ Now you are good to go!
 
 To activate environment:
 
-`conda activate onboarding-docs-env`
+`conda activate repo-name-env`
 
 If you install any new dependencies, change the environment.yml file manually. Do not use `conda env export` because it will create cross-platform compatibility issues. 
+
+For detailed conda commands check: [Conda Cheat Sheet](https://github.com/gtfintechlab/onboarding-docs/blob/main/conda_cheatsheet.md)
 
 ### Working on a new feature or updating the existing codebase
 
 To start development on a new feature, first take a pull of latest changes from origin repository.
 ```
 git checkout main
-git pull origin main
+git pull --rebase origin main
 ```
 Other option to update your local main branch to origin main branch is as follows: 
 ```
@@ -54,6 +68,8 @@ git checkout main
 git fetch origin main
 git reset --hard origin/main
 ```
+It is not advisable to use second approach, don't use it if you don't know what you are doing. 
+
 **You should reset your local main branch only if you don't have any important changes/features on local main branch which are not on origin main branch. This will reset your local main branch to look exactly same as origin main branch (main branch on core repo).**
 
 Now your local main branch is same as origin main branch. To start working on a new feature, create a new feature branch from local main branch.
@@ -71,7 +87,7 @@ You can also do `git add .` to add all changed files to git staging area. Once t
 git commit -m "Commit message here"
 ```
 
-Push these changes to your branch on online repo
+Push these changes to your branch on online/remote repo
 ```
 git push -u origin feature/feature_name
 ```
@@ -79,9 +95,9 @@ On the GitHub web client, create a new pull request (PR). Set the PR type to `Dr
 
 In case you want to update your pull request, you can push the changes to the same branch corresponding to branch in PR. Changes pushed will be reflected in the PR.
 
-If your feature branch is ready for review, in the GitHub web client, go to your PR, remove the `WIP:` prefix from the PR name, and assign it to a teammate for review. When ready to merge, setup a call with Agam to `Squash and merge`.
+If your feature branch is ready for review, in the GitHub web client, go to your PR, remove the `WIP:` prefix from the PR name, and assign it to a teammate for review. When ready to merge, setup a call with project leader to `Rebase and merge`.
 
-### Git Workflow
+### Centralized Workflow
 
 This project uses a **Centralized Workflow** meaning that there is a central repository that serves as the single point-of-entry for all changes to the project.
 
@@ -101,3 +117,6 @@ See [here](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 Example of a good commit message: `Add readme`
 
 Example of an bad commit message: `Adds readme.`
+
+## GitHub Actions
+**add information here**
