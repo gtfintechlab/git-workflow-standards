@@ -118,5 +118,28 @@ Example of a good commit message: `Add readme`
 
 Example of an bad commit message: `Adds readme.`
 
+### Updating pull requests
+
+A pull request should not contain unnecessary commits. If you add more commits to PR after someone requests a review, please do not 
+add commits like `requested changes` or `changed as requested`. Instead, you should squash such unnecessary commits in original 
+commit message. Squashing will combine both commits into one, and you can give a meaningful commit message to final commit message. 
+
+For example, if you want to merge last 5 commits, you will have to run
+```shell
+git rebase -i HEAD~5
+```
+
+This will open your git editor. Change all `pick` words to `squash` words except for the one commit (generally the topmost commit the editor, since you can anyways change the 
+commit message). Save and close this file. 
+
+After this, one more editor window will open. Here, you can change the commit message, and provide whatever message you want. The first
+non comment line will become your final commit message. 
+
+Please note that you should only squash your commits. Also, 
+please do not perform interactive rebase on merge commits.
+
+This way, you can update your commit history in git. Squashing commits is a good practice followed by almost every good open source 
+project. To read more about rewriting git history, refer the official documentation [here](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+
 ## GitHub Actions
 **add information here**
