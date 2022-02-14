@@ -3,7 +3,11 @@
 
 ## Installation
 [Installation page](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-**add information here**
+Once your installation is done, setup your name and email for git. This name and email will be attached with your commits
+```shell
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+```
 
 ## Creating a new repo
 
@@ -33,8 +37,8 @@ cd repo-name
 Now your local repo will have one remote corresponding to cloned repo in your github account.
 ```
 git remote -v
-origin	https://github.com/gtfintechlab/repo-name (fetch)
-origin	https://github.com/gtfintechlab/repo-name (push)
+origin  https://github.com/gtfintechlab/repo-name (fetch)
+origin  https://github.com/gtfintechlab/repo-name (push)
 ```
 
 ### Conda environment
@@ -140,6 +144,15 @@ please do not perform interactive rebase on merge commits.
 
 This way, you can update your commit history in git. Squashing commits is a good practice followed by almost every good open source 
 project. To read more about rewriting git history, refer the official documentation [here](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+
+**As an alternative**, if you wish to avoid interactive rebase to squash the commits, you can use `git reset` command to undo those commits and bring their cumulative changes in the unstaged mode, and commit those changes as a single commit.
+
+For example, if you want to squash last 5 commits, you will have to run
+```shell
+git reset HEAD~5
+git add .
+git merge -m "final commit message for squashed commit"
+```
 
 ## GitHub Actions
 **add information here**
