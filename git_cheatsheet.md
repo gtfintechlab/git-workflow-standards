@@ -8,6 +8,7 @@
   - `git add foo.py`: add `foo.py` to the staging area
   - `git add foo.py bar.py`: add `foo.py` AND `bar.py` to the staging area
   - `git add -u` or `git add .`: Adds all tracked files to the staging area.
+    - Note: If you want to use `git add .`, make sure that you are at the root directory of your project, otherwise it will only add the files that are in the current working directory.
 - rm
   - `git rm oops.txt`: remove `oops.txt`
 - commit

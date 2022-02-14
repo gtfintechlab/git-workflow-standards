@@ -86,7 +86,9 @@ Start working on your feature, add changed files and commit them. Let's say you 
 git add file1 file2
 ```
 
-You can also do `git add .` to add all changed files to git staging area. Once this is done, you need to commit these changes.
+You can also do `git add .` to add all changed files to git staging area. Just note that while doing that, make sure that you are at the root directory of your project, otherwise it will only add the files that are in the current working directory.
+
+Once this is done, you need to commit these changes.
 ```
 git commit -m "Commit message here"
 ```
