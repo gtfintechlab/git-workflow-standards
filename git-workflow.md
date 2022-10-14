@@ -30,15 +30,15 @@ If this is your first time contributing to the project, clone repository to your
 
 Clone the repo. 
 ```
-git clone https://github.com/gtfintechlab/repo-name
+git clone https://github.com/user-name/repo-name
 cd repo-name
 ```
 
 Now your local repo will have one remote corresponding to cloned repo in your github account.
 ```
 git remote -v
-origin  https://github.com/gtfintechlab/repo-name (fetch)
-origin  https://github.com/gtfintechlab/repo-name (push)
+origin  https://github.com/user-name/repo-name (fetch)
+origin  https://github.com/user-name/repo-name (push)
 ```
 
 ### Conda environment
@@ -57,7 +57,7 @@ To activate environment:
 
 If you install any new dependencies, change the environment.yml file manually. Do not use `conda env export` because it will create cross-platform compatibility issues. 
 
-For detailed conda commands check: [Conda Cheat Sheet](https://github.com/gtfintechlab/onboarding-docs/blob/main/conda_cheatsheet.md)
+For detailed conda commands check: [Conda Cheat Sheet](https://github.com/shahagam4/technical-notes/blob/main/conda_cheatsheet.md)
 
 ### Working on a new feature or updating the existing codebase
 
